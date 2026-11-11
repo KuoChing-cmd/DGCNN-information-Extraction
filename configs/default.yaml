@@ -39,3 +39,4 @@ data:
   min_char_count: 1
   subject_threshold: 0.5
   object_threshold: 0.5
+

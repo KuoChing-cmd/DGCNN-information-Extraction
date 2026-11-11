@@ -43,3 +43,4 @@ dev = [
 
 [tool.setuptools.packages.find]
 include = ["dgcnn_re*"]
+

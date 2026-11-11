@@ -80,3 +80,4 @@ class MaskedRelationExtractionLoss(nn.Module):
         }
 
         return total_loss, loss_dict
+

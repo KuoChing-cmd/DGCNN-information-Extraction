@@ -375,3 +375,4 @@ class DGCNNForRelationExtraction(nn.Module):
             output["pc"] = pc
 
         return output
+

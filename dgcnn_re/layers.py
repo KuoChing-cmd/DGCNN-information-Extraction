@@ -218,3 +218,4 @@ class MaskedGlobalMaxPool1d(nn.Module):
         # Replace masked positions with large negative number
         masked_x = x - (1.0 - mask.float()) * 1e9
         return torch.max(masked_x, dim=1).values
+

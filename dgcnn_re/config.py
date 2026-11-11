@@ -79,3 +79,4 @@ class Config:
         os.makedirs(os.path.dirname(os.path.abspath(yaml_path)), exist_ok=True)
         with open(yaml_path, "w", encoding="utf-8") as f:
             yaml.dump(asdict(self), f, sort_keys=False, default_flow_style=False)
+
