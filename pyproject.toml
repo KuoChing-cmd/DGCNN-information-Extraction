@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dgcnn-information-extraction"
+version = "2.0.0"
+description = "A modern, professional PyTorch implementation of Dilated Gated CNN (DGCNN) for Joint Entity and Relation Extraction"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "DGCNN-RE Team"}
+]
+keywords = ["nlp", "information-extraction", "relation-extraction", "dgcnn", "pytorch", "deep-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.20.0",
+    "jieba>=0.42.0",
+    "tqdm>=4.60.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0",
+    "black>=23.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["dgcnn_re*"]

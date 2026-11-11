@@ -1,0 +1,41 @@
+# DGCNN-RE Default Configuration
+
+model:
+  vocab_size: 5000
+  num_classes: 10
+  char_dim: 128
+  word_dim: 0
+  hidden_dim: 128
+  max_len: 256
+  dilation_rates: [1, 2, 5, 1, 2, 5, 1, 2, 5, 1, 1, 1]
+  kernel_size: 3
+  num_heads: 8
+  size_per_head: 16
+  dropout: 0.25
+  conv_dropout: 0.1
+  num_inter_points: 6
+
+training:
+  batch_size: 16
+  lr: 0.001
+  min_lr: 0.00001
+  warmup_ratio: 0.05
+  weight_decay: 0.0001
+  epochs: 15
+  ema_decay: 0.999
+  grad_clip: 5.0
+  device: "auto"
+  save_dir: "checkpoints"
+  log_interval: 10
+  eval_every: 1
+  patience: 6
+  seed: 42
+
+data:
+  train_path: "data/sample_train.json"
+  val_path: "data/sample_train.json"
+  schema_path: "data/sample_schemas.json"
+  vocab_path: "data/vocab.json"
+  min_char_count: 1
+  subject_threshold: 0.5
+  object_threshold: 0.5

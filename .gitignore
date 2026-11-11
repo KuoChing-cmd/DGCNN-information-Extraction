@@ -1,2 +1,33 @@
-# Project exclude paths
-/venv/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Checkpoints and model weights
+checkpoints/
+*.pt
+*.pth
+*.weights
+*.bin
+
+# Environment & Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# Data artifacts
+data/processed/
+*.log
+dev_pred.json
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
